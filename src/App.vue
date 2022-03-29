@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderBoolflix/>
+    <MainBoolflix/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderBoolflix from './components/HeaderBoolflix.vue';
+import MainBoolflix from './components/MainBoolflix.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainBoolflix,
+    HeaderBoolflix
   }
 }
 </script>
