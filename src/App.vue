@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HeaderBoolflix/>
-    <MainBoolflix/>
+    <HeaderBoolflix />
+    <MainBoolflix />
   </div>
 </template>
 

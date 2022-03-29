@@ -1,18 +1,21 @@
 <template>
     <div>
-        <div>Titolo</div>
-        <div>Titolo originale</div>
-        <div>Lingua</div>
-        <div>Voto</div>
+        <div>{{ movieData.title }}</div>
+        <div>{{ movieData.original_title }}</div>
+        <div>{{ movieData.original_language }}</div>
+        <div>{{ movieData.vote_average }}</div>
     </div>
 </template>
 
 <script>
 export default {
     name: "MovieCard",
+    props: {
+        movieData: Object,
+    }
 }
 </script>
 
-<style>
+<style scoped lang="sass">
 
 </style>
