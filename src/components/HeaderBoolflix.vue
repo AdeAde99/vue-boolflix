@@ -1,9 +1,11 @@
 <template>
   <header>
     <h2>BOOLFLIX</h2>
-    <form action="" @submit.prevent="$emit('search', string)">
-      <input type="text" v-model="string">
-      <button>Cerca</button>
+    <form action="" @submit.prevent="$emit('search', stringSearch)">
+      <label for="search">
+        <input type="text" v-model="stringSearch" id="search" name="search">
+        <button>Cerca</button>
+      </label>
     </form>
   </header>
 </template>
@@ -13,7 +15,7 @@ export default {
     name: "HeaderBoolflix",
     data() {
       return {
-        string: '',
+        stringSearch: '',
       }
     }
 }

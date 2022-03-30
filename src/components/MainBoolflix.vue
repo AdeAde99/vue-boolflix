@@ -12,6 +12,10 @@ export default {
     components: {
       MovieCard,
     },
+    props: {
+      arrMovies: Array,
+      arrSeries: Array,
+    }
 };
 </script>
 
