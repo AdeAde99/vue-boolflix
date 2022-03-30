@@ -55,7 +55,7 @@ export default {
               id: movie.id,
               title: movie.title,
               originalTitle: movie.original_title,
-              language: movie.original_language,
+              originalLanguage: movie.original_language,
               rating: movie.vote_average,
             }));
           } else {
@@ -63,7 +63,7 @@ export default {
               id: series.id,
               title: series.name,
               originalTitle: series.original_name,
-              language: series.original_language,
+              originalLnguage: series.original_language,
               rating: series.vote_average,
             }));
           }
