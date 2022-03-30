@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderBoolflix />
+    <HeaderBoolflix @search="" />
     <MainBoolflix />
   </div>
 </template>

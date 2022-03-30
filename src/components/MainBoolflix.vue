@@ -12,9 +12,6 @@ export default {
     components: {
       MovieCard,
     },
-    data () {
-      arrMovies: []
-    }
 };
 </script>
 
