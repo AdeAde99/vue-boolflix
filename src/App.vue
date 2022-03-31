@@ -22,7 +22,7 @@ export default {
       apiKey: 'eddeb9cc139fc5540af4fe0bcd294c59',
       arrSeries: [],
       arrMovies: [],
-      imgUrl: 'https://image.tmdb.org/t/p/w185',
+      imgUrl: 'https://image.tmdb.org/t/p/w342',
     }
   },
   methods: {
@@ -65,17 +65,14 @@ export default {
               id: series.id,
               title: series.name,
               originalTitle: series.original_name,
-              originalLnguage: series.original_language,
+              originalLanguage: series.original_language,
               rating: series.vote_average,
               image: this.imgUrl + series.poster_path,
             }));
           }
         });
-     
     },
-    
-    
-  }
+  },
 }
 </script>
 
