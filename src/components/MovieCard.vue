@@ -28,6 +28,6 @@ export default {
 
 </script>
 
-<style scoped lang="sass">
+<style scoped lang="scss">
 
 </style>

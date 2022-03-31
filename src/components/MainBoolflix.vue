@@ -22,6 +22,12 @@ export default {
 };
 </script>
 
-<style scoped lang="sass">
-
+<style scoped lang="scss">
+main {
+  background-color: #434343;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
 </style>

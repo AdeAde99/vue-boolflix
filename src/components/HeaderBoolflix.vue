@@ -21,6 +21,25 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
+<style scoped lang="scss">
+  h2 { color: #9e0000;
+   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+
+    background-color: black;
+    h2 {
+      margin-left: 3rem;
+    }
+    form {
+      margin-right: 3rem;
+      button {
+        background-color: #9e0000;
+      }
+    }
+  }
 </style>
