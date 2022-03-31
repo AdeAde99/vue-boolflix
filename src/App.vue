@@ -22,6 +22,7 @@ export default {
       apiKey: 'eddeb9cc139fc5540af4fe0bcd294c59',
       arrSeries: [],
       arrMovies: [],
+      imgUrl: 'https://image.tmdb.org/t/p/w185',
     }
   },
   methods: {
@@ -57,6 +58,7 @@ export default {
               originalTitle: movie.original_title,
               originalLanguage: movie.original_language,
               rating: movie.vote_average,
+              image: this.imgUrl + movie.poster_path,
             }));
           } else {
             this.arrSeries = response.data.results.map((series) => ({
@@ -65,9 +67,11 @@ export default {
               originalTitle: series.original_name,
               originalLnguage: series.original_language,
               rating: series.vote_average,
+              image: this.imgUrl + series.poster_path,
             }));
           }
         });
+     
     },
     
     

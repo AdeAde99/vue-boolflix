@@ -1,5 +1,6 @@
 <template>
     <div>
+        <img :src="movieData.image" alt="">
         <div>{{ movieData.title }}</div>
         <div>{{ movieData.originalTitle }}</div>
         <div>{{ movieData.originalLanguage }}</div>
