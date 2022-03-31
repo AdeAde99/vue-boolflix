@@ -10,6 +10,7 @@ import HeaderBoolflix from './components/HeaderBoolflix.vue';
 import MainBoolflix from './components/MainBoolflix.vue';
 import axios from 'axios';
 
+
 export default {
   name: 'App',
   components: {
@@ -27,7 +28,6 @@ export default {
   },
   methods: {
     GetMovieData(stringSearch) {
-      // chiamate axios all'API
       if (stringSearch !== '') {
         const objParams = {
           api_key: this.apiKey,
@@ -35,10 +35,9 @@ export default {
           query: stringSearch,
         };
 
-        // ricerca movies
+        
         this.axiosCall('movie', objParams);
 
-        // ricerva serie tv
         this.axiosCall('tv', objParams);
       } else {
         this.arrMovies = [];
@@ -57,7 +56,7 @@ export default {
               title: movie.title,
               originalTitle: movie.original_title,
               originalLanguage: movie.original_language,
-              rating: movie.vote_average,
+              rating: Math.ceil(movie.vote_average / 2),
               image: this.imgUrl + movie.poster_path,
             }));
           } else {
@@ -66,7 +65,7 @@ export default {
               title: series.name,
               originalTitle: series.original_name,
               originalLanguage: series.original_language,
-              rating: series.vote_average,
+              rating: Math.ceil(series.vote_average / 2),
               image: this.imgUrl + series.poster_path,
             }));
           }
